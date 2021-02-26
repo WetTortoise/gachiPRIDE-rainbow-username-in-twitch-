@@ -25,7 +25,7 @@ pleb_colours = "Blue", "BlueViolet", "CadetBlue", "Chocolate", "Coral", "DodgerB
 prime = "True" # set this to yes if you have prime or turbo, if not set it to false or anything else
 
 def GACHI_PRIDE():
-    if prime == "yes":
+    if prime == "True":
         while True:
             time.sleep(10)  # time delay in seconds # (keep within twitch ratelimits or you will be global banned for about 30mins)
             random_number = random.randint(0, 16777215)
