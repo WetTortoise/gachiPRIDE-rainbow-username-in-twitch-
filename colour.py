@@ -22,7 +22,7 @@ def information():
     sendRaw('CAP REQ :twitch.tv/tags')
 
 pleb_colours = "Blue", "BlueViolet", "CadetBlue", "Chocolate", "Coral", "DodgerBlue", "Firebrick", "GoldenRod", "Green", "HotPink", "OrangeRed", "Red", "SeaGreen", "SpringGreen", "YellowGreen"
-prime = "yes" # set this to yes if you have prime or turbo, if not set it to false or anything else
+prime = "True" # set this to yes if you have prime or turbo, if not set it to false or anything else
 
 def GACHI_PRIDE():
     if prime == "yes":
