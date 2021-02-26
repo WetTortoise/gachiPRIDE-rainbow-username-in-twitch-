@@ -2,9 +2,17 @@ from socket import socket
 import time
 import threading
 import random
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.properties')
+
+OAUTH = config['DEFAULT']['oauth']
+PRIME = config['DEFAULT']['prime']
+
+pleb_colours = "Blue", "BlueViolet", "CadetBlue", "Chocolate", "Coral", "DodgerBlue", "Firebrick", "GoldenRod", "Green", "HotPink", "OrangeRed", "Red", "SeaGreen", "SpringGreen", "YellowGreen"
 
 sock = socket()
-
 
 def connect():
     sock.connect(('irc.chat.twitch.tv', 6667))  # connects to twitch.
@@ -15,17 +23,15 @@ def sendRaw(data):
     sock.send(bytes(data + '\r\n', 'utf-8')) # enables you to communicate to the irc server
 
 def information():
-    sendRaw('PASS oauth:')  # oauth https://twitchapps.com/tmi/
+    sendRaw('PASS oauth:' + OAUTH)  # oauth https://twitchapps.com/tmi/
     sendRaw('NICK turtoise')  # nickname
     # requests more information
     sendRaw('CAP REQ :twitch.tv/commands')
     sendRaw('CAP REQ :twitch.tv/tags')
 
-pleb_colours = "Blue", "BlueViolet", "CadetBlue", "Chocolate", "Coral", "DodgerBlue", "Firebrick", "GoldenRod", "Green", "HotPink", "OrangeRed", "Red", "SeaGreen", "SpringGreen", "YellowGreen"
-prime = "True" # set this to yes if you have prime or turbo, if not set it to false or anything else
 
 def GACHI_PRIDE():
-    if prime == "True":
+    if PRIME == True:
         while True:
             time.sleep(10)  # time delay in seconds # (keep within twitch ratelimits or you will be global banned for about 30mins)
             random_number = random.randint(0, 16777215)
