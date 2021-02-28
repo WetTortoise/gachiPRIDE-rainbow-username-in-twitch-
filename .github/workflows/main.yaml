@@ -20,4 +20,8 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: colour
-        path: src/dist/windows
+        path: |
+          src/dist/windows
+          config.properties
+
+
