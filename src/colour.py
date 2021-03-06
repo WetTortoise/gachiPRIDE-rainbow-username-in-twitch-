@@ -31,7 +31,7 @@ def information():
 
 
 def GACHI_PRIDE():
-    if PRIME == True:
+    if PRIME:
         while True:
             time.sleep(10)  # time delay in seconds # (keep within twitch ratelimits or you will be global banned for about 30mins)
             random_number = random.randint(0, 16777215)
