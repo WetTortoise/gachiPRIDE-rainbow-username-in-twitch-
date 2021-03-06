@@ -21,7 +21,7 @@ jobs:
       with:
         name: colour
         path: |
-          src/dist/windows/colour.exe
+          src/colour.exe
           config.properties
 
 
