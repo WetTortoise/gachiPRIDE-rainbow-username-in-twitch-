@@ -1,4 +1,7 @@
-# gachiPRIDE-rainbow-username-in-twitch-
+# https://github.com/WetTortoise/turtlerino Improved version of this script :) 
+## gachiPRIDE-rainbow-username-in-twitch-
+
+
 Really simple to use dank rainbow username script 
 
 ⣿⣿⣿⣿⣿⣿⣷⣷⠏⠉⠉⠋⠉⠈⠄⠄⠈⠉⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣷⠏⠉⠉⠋⠉⠈⠄⠄⠈⠉⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
